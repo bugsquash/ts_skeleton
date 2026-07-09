@@ -9,4 +9,9 @@ if exist "%REPO_DIR%\.git" (
 )
 
 git clone "%REPO_URL%" "%REPO_DIR%"
+
+cd /d "%REPO_DIR%"
+call npm install
+node dist/src/main.js
+
 endlocal
