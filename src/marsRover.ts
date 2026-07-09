@@ -1,3 +1,5 @@
+import { Position } from "./position";
+
 export class Rover {
   #position: Position;
   #direction: string;
@@ -15,7 +17,3 @@ export class Rover {
     return this.#direction;
   }
 }
-type Position = {
-  x: number;
-  y: number;
-};
