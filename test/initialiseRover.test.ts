@@ -3,7 +3,7 @@ import { strict as assert } from "assert";
 import {describe, it} from "node:test";
 
 import { position } from "../src/position";
-import { Rover } from "../src/Rover";
+import { Rover } from "../src/marsRover";
 
 describe("Initialise Rover", () => {
   it("Rover is initialised succesfully", () => {
