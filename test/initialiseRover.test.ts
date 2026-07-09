@@ -2,6 +2,9 @@ import "mocha"
 import { strict as assert } from "assert";
 import {describe, it} from "node:test";
 
+import { position } from "../src/position";
+import { Rover } from "../src/Rover";
+
 describe("Initialise Rover", () => {
   it("Rover is initialised succesfully", () => {
     const rover = new Rover(position(2, 4));
@@ -9,27 +12,4 @@ describe("Initialise Rover", () => {
   })
 })
 
-class Rover {
-  #position: Position;
-
-  constructor(position: Position) {
-    this.#position = position;
-  }
-  
-  get position() {
-    return this.#position;
-  }
-}
-
-type Position = {
-  x: number
-  y: number
-}
-
-function position(x: number, y: number) {
-  return {
-    x,
-    y
-  }
-}
 
