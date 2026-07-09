@@ -1,7 +1,7 @@
 @echo off
 setlocal
 set REPO_URL=https://github.com/bugsquash/ts_skeleton.git
-set REPO_DIR=c:/temp/marsrover/
+set REPO_DIR=%room1/marsrover/
 
 if exist "%REPO_DIR%\.git" (
     echo Existing Git repository found. Deleting...
