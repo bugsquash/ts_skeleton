@@ -7,8 +7,10 @@ import { Rover } from "../src/marsRover";
 
 describe("Initialise Rover", () => {
   it("Rover is initialised succesfully", () => {
-    const rover = new Rover(position(2, 4));
+    const rover = new Rover(position(2, 4), "N");
     assert.deepStrictEqual(rover.position, {x: 2, y: 4});
+    assert.deepStrictEqual(rover.direction, "N");
+
   })
 })
 
