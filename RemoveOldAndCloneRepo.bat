@@ -12,6 +12,7 @@ git clone "%REPO_URL%" "%REPO_DIR%"
 
 cd /d "%REPO_DIR%"
 call npm install
+call npm run build
 node dist/src/main.js
 
 endlocal
